@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Suma de dos números</h2>
+  
+  <div class="inputs">
+    <input type="number" placeholder="Número 1" [(ngModel)]="num1">
+    <input type="number" placeholder="Número 2" [(ngModel)]="num2">
+  </div>
+
+  <button (click)="sumar()">➕ Sumar</button>
+
+  <div class="result-box" *ngIf="resultado !== null">
+    <p>Resultado: <span>{{ resultado }}</span></p>
+  </div>
+</div>

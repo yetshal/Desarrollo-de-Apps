@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>{{ titulo }}</h2>
+
+  <div class="input-group">
+    <input 
+      type="text" 
+      [(ngModel)]="nuevoTitulo" 
+      placeholder="Escribe un nuevo título">
+    <button (click)="cambiarTitulo()">✏️ Cambiar título</button>
+  </div>
+</div>
